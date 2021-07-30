@@ -30,11 +30,6 @@ Common
             font-weight: bold;
             overflow: scroll;
         }
-
-        .font-primary {
-                color:white;
-                font-size:20px;
-        }
         /*
 Post
  ***************/
@@ -123,4 +118,9 @@ Post
             .posts li .name_body .name {
                 font-size: 20px;
             }
+        }
+        
+        .form-control {
+            background-color: white;
+            color: black;
         }
