@@ -1,7 +1,5 @@
 # django-twiiter
 Check out [LIVE DEMO](https://django-twitter-t.herokuapp.com/) here!!
-## Screenshot
-<img src="https://user-images.githubusercontent.com/7912575/108593051-5cda5300-7397-11eb-83eb-672534dd33ce.png" width="400" />
 ## Tech used
 ```
 * Html
