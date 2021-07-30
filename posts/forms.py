@@ -7,4 +7,4 @@ from django.forms import ModelForm
 class PostForm(forms.ModelForm):
     class Meta:
         model = Post
-        fields = '__all__'
+        fields = ['name', 'body', 'image']
