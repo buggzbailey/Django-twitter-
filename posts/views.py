@@ -43,8 +43,8 @@ def delete(request, id):
   # /// Edit
 
 
-def edit(request, id):
-    posts = Post.objects.get(id=id)
+def edit(request, post_id):
+    posts = Post.objects.get(id=post_id)
     print(posts)
     if request.method == 'POST':
         form = PostForm(request.POST, request.FILES, instance=posts)
