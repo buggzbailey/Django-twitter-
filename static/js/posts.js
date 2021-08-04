@@ -2,7 +2,7 @@
 //JS for Posts page
 ////////////////////////////////////
 
-console.log("hello");
+// console.log("hello");
 
 $(function() {
     // Executed when js-menu-icon js clicked
