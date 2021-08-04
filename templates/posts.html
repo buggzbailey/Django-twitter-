@@ -4,7 +4,7 @@
 <body class="body">
 <div class="main-header">
     <a class="title-icon" href="">
-<!--     <img src="{% static '/img/tweet.png' %}" style= "width:40px; height:25px;" class="logo"> -->
+    <img src="{% static '/img/tweet.png' %}" style= "width:40px; height:25px;" class="logo">
     <span class="font-primary">
     <strong>Twitter Clone<strong></span></a>
 </div>
@@ -26,8 +26,13 @@
   <ul>
      {% for post in posts %}
     <li>
-    <img class="menu_icon js-menu-icon" src="{% static 'img/menu.png' %}" />
-    <div class="menu">
+    <img src="{% static 'img/menu.png' %}"  class="menu_icon js-menu-icon" 
+            data-bs-container ="body"
+            data-bs-toggle="popover"
+            data-bs-placement="left"
+           data-bs-content="<a href='/edit/{{ post.id }}/'>Edit</a><br><a href='/delete/{{ post.id }}/'>Delete</a>" 
+            data-bs-html="true">
+    <div class="menu" onclick="posts(this)">
     <a href="/delete/{{post.id}}">Delete</a>
     <a href="/edit/{{post.id}}">Edit</a>
     </div>
