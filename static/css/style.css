@@ -19,6 +19,13 @@ Common
             text-align: left;
         }
         
+        .bg {
+            background: url(https://wallpapercave.com/wp/agHMSaj.jpg);
+            background-size: cover;
+            height: 800px;
+            text-align: center;
+        }
+        
         .content {
             max-width: 600px;
             height: 100%;
@@ -29,6 +36,8 @@ Common
             text-align: left;
             font-weight: bold;
             overflow: scroll;
+            background-color: black;
+            opacity: 1;
         }
         /*
 Post
@@ -78,6 +87,7 @@ Post
         }
         
         .posts li .menu {
+            display: none;
             position: absolute;
             top: 40px;
             right: 15px;
@@ -124,7 +134,7 @@ Post
             background-color: white;
             color: black;
         }
-
-        .font-primary{
-                color:white;
+        
+        .font-primary {
+            color: white;
         }
